@@ -1,6 +1,7 @@
 package com.upload.files.services.impl;
 
 import com.upload.files.services.IUploadFilesService;
+import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.File;
@@ -9,6 +10,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 import java.util.UUID;
 
+@Service
 public class UploadFilesServiceImpl implements IUploadFilesService {
     @Override
     public String handleFileUpload(MultipartFile file) throws Exception {
